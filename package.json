@@ -2,7 +2,7 @@
   "name": "pizza-panda",
   "version": "1.0.0",
   "description": "judge whether object is valid pizza or not",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \\\"Error: no testspecified\\\" && exit 1"
   },
