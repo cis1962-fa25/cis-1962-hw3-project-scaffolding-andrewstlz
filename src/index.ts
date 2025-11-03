@@ -9,22 +9,6 @@ const NEVER_TOPPINGS = new Set([
   "potato",
 ]);
 
-const VALID_TOPPINGS = new Set([
-  "tomato",
-  "cheese",
-  "mushroom",
-  "onion",
-  "beef",
-  "chicken",
-  "lobster",
-  "pineapple",
-  "peach",
-  "ham",
-  "spinach",
-  "sausage",
-  "pepperoni",
-]);
-
 const CRUST_VALUES = ["stuffed", "normal"] as const;
 
 export const crustSchema = z.enum(CRUST_VALUES, {
@@ -53,12 +37,6 @@ export const pizzaSchema = z.object({
             code: "custom",
             path: [i],
             message: `"${t}" should never go on pizza`,
-          });
-        } else if (!VALID_TOPPINGS.has(t)) {
-          ctx.addIssue({
-            code: "custom",
-            path: [i],
-            message: `"${t}" is not a valid topping`,
           });
         }
       }
