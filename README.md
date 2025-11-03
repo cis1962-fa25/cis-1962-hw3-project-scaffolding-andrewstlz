@@ -1,2 +1,26 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/x6X7wJcH)
-TODO: Fill this out with details about how to run your app!
+# 🍕 Pizza Panda App
+
+Welcome to the Pizza-Panda App! Here, you can validate whether a given object is a pizza with Zod — as a library **and** a CLI.
+
+---
+
+## Installation
+
+Install locally or from npm:
+
+```bash
+# Local install (for grading)
+npm install ../pizza-validator-andrew
+
+# Or global install for CLI use
+npm install -g ../pizza-validator-andrew
+
+```
+
+## CLI Usage
+
+Once you have installed the package, you can run it directly from your terminal.
+
+```bash
+pizza-validate <path/to/pizza.json> [--pretty]
+```
